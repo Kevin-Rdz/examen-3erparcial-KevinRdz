@@ -1,22 +1,19 @@
 package edu.uaslp.objetos.shoppingcart.scart;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 public class Item {
     private String itemCode1;
-    private String providerCode1;
     private BigDecimal s;
-    private int band;
-    private String itemCode;
+    private String code;
     private String  providerCode;
-    private int Quantity;
-    private BigDecimal unitcost;
-    public Item( String itemCode1, String providerCode1, BigDecimal s, int band) {
-        this.itemCode1 = itemCode1;
-        this.providerCode1 = providerCode1;
-        this.s = s;
-        this.band = band;
+    private int quantity;
+    private BigDecimal unitCost;
+    public Item( String itemCode, String providerCode, BigDecimal unitCost, int quantity ) {
+        this.code = itemCode;
+        this.providerCode = providerCode;
+        this.unitCost = unitCost;
+        this.quantity = quantity;
     }
 
     public Item () {
@@ -24,25 +21,24 @@ public class Item {
     }
 
     public void setCode (String  itemCode) {
-        this.itemCode = itemCode;
+        this.code = itemCode;
     }
     public void setProviderCode (String  providerCode) {
         this.providerCode = providerCode;
     }
 
     public void setQuantity (int Quantity) {
-        this.Quantity = Quantity;
+        this.quantity = Quantity;
     }
-    public void setUnitCost ( BigDecimal unitcost) {
-        this.unitcost = unitcost;
+    public void setUnitCost ( BigDecimal unitCost) {
+        this.unitCost = unitCost;
     }
 
 
-    public boolean getCode () {
-    }
+
 
     public int getQuantity () {
-        return Quantity;
+        return quantity;
     }
 
     public String getProviderCode () {
@@ -50,6 +46,10 @@ public class Item {
     }
 
     public BigDecimal getUnitCost () {
-        return unitcost;
+        return unitCost;
+    }
+
+    public String getCode () {
+        return code;
     }
 }

@@ -1,7 +1,4 @@
 package edu.uaslp.objetos.shoppingcart.exception;
 
 public class ItemNotFoundException extends RuntimeException{
-    public ItemNotFoundException(String titulo){
-        super(titulo);
-    }
 }

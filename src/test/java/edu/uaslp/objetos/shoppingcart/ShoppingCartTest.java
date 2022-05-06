@@ -8,6 +8,7 @@ import java.util.List;
 
 import edu.uaslp.objetos.shoppingcart.exception.EmptyShoppingCartException;
 import edu.uaslp.objetos.shoppingcart.exception.InvalidDataException;
+import edu.uaslp.objetos.shoppingcart.exception.ItemNotFoundException;
 import edu.uaslp.objetos.shoppingcart.scart.Item;
 import edu.uaslp.objetos.shoppingcart.scart.ShoppingCart;
 import org.junit.jupiter.api.Test;
